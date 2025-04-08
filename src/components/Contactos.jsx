@@ -1,14 +1,13 @@
-import React from 'react'
-
+import contactenosImg from '../assets/maps.png'
 const Contactos = () => {
   return (
     <section id='contacto' className='py-20 bg-gray-800'>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex flex-col md:flex-row items-center gap-8'>
           <div className='md:w-1/2'>
-            <div className='relative w-full h-80 rounded-xl overflow-hidden shadow-xl border border-teal-500/20 transform transition-transform hover:scale-105 duration-300'>
+            <div className='relative w-full h-80 rounded-xl overflow-hidden shadow-xl border border-teal-500/20 transform transition-transform'>
               <img
-                src='/api/placeholder/600/400'
+                src={contactenosImg}
                 alt='Contacto'
                 className='w-full h-full object-cover'
               />
@@ -148,3 +147,4 @@ const Contactos = () => {
 }
 
 export default Contactos
+

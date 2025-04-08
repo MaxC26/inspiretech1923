@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react'
-import React from 'react'
+import logoinspiretech1923 from '../assets/logoinspiretech1923.png'
 
 const Hero = () => {
   return (
@@ -16,41 +16,7 @@ const Hero = () => {
         <div className='flex flex-col md:flex-row items-center justify-between gap-8'>
           <div className='md:w-1/2'>
             <div className='flex items-center mb-4'>
-              <svg
-                className='h-12 w-12 text-teal-400'
-                viewBox='0 0 24 24'
-                fill='none'
-                xmlns='http://www.w3.org/2000/svg'
-              >
-                <path
-                  d='M4 4H12V12H4V4Z'
-                  stroke='currentColor'
-                  strokeWidth='2'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                />
-                <path
-                  d='M12 4H20V12H12V4Z'
-                  stroke='currentColor'
-                  strokeWidth='2'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                />
-                <path
-                  d='M12 12H20V20H12V12Z'
-                  stroke='currentColor'
-                  strokeWidth='2'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                />
-                <path
-                  d='M4 12H12V20H4V12Z'
-                  stroke='currentColor'
-                  strokeWidth='2'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                />
-              </svg>
+              <img src={logoinspiretech1923} alt='' className='w-[70px]' />
               <h1 className='ml-3 text-4xl md:text-5xl lg:text-6xl font-bold text-white'>
                 INSPIRETECH
                 <span className='text-xl md:text-2xl lg:text-3xl align-top text-teal-400'>

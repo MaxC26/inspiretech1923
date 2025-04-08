@@ -1,5 +1,5 @@
-import { Menu } from 'lucide-react'
-import React from 'react'
+import { Menu, X } from 'lucide-react'
+import logoinspiretech1923 from '../assets/logoinspiretech1923.png'
 
 const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
   return (
@@ -9,41 +9,7 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
           <div className='flex items-center'>
             <div className='flex-shrink-0'>
               <div className='flex items-center'>
-                <svg
-                  className='h-8 w-8 text-teal-400'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path
-                    d='M4 4H12V12H4V4Z'
-                    stroke='currentColor'
-                    strokeWidth='2'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  />
-                  <path
-                    d='M12 4H20V12H12V4Z'
-                    stroke='currentColor'
-                    strokeWidth='2'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  />
-                  <path
-                    d='M12 12H20V20H12V12Z'
-                    stroke='currentColor'
-                    strokeWidth='2'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  />
-                  <path
-                    d='M4 12H12V20H4V12Z'
-                    stroke='currentColor'
-                    strokeWidth='2'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  />
-                </svg>
+                <img src={logoinspiretech1923} className='w-[30px]' />
                 <span className='ml-2 text-xl font-semibold'>
                   INSPIRETECH
                   <span className='text-sm align-top text-teal-400'>1923</span>

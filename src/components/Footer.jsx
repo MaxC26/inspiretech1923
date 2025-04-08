@@ -1,4 +1,4 @@
-import React from 'react'
+import logoinspiretech1923 from '../assets/logoinspiretech1923.png'
 
 const Footer = () => {
   return (
@@ -9,11 +9,13 @@ const Footer = () => {
           {/* Logo & About */}
           <div>
             <div className='flex items-center mb-4'>
-              <div className='h-8 w-8 rounded-md bg-teal-500/20 flex items-center justify-center mr-2'>
-                <span className='text-teal-400 text-2xl font-bold'>&lt;/&gt;</span>
+              <div className='h-8 w-8 rounded-md flex items-center justify-center mr-2'>
+                <img src={logoinspiretech1923} />
               </div>
-              <span className='font-bold text-xl text-white'>InspireTech</span>
-              <span className='text-teal-400 text-sm ml-1'>1923</span>
+              <span className='text-xl font-semibold'>
+                INSPIRETECH
+                <span className='text-sm align-top text-teal-400'>1923</span>
+              </span>
             </div>
             <p className='text-gray-400 text-sm mb-4'>
               Soluciones tecnológicas innovadoras para impulsar tu negocio en la era

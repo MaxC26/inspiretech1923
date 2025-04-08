@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react'
-import React from 'react'
+import quienesSomosImage from '../assets/typing-keyboard.jpg'
 
 const QuienesSomos = () => {
   return (
@@ -9,7 +9,7 @@ const QuienesSomos = () => {
           <div className='md:w-1/2'>
             <div className='relative w-full h-80 rounded-xl overflow-hidden shadow-xl border border-teal-500/20'>
               <img
-                src='/api/placeholder/600/400'
+                src={quienesSomosImage}
                 alt='Programador trabajando'
                 className='w-full h-full object-cover'
               />

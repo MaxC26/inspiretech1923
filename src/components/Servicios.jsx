@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Servicios = () => {
   return (
     <section id='servicios' className='py-20 bg-gray-900'>
@@ -15,147 +13,114 @@ const Servicios = () => {
           </p>
         </div>
 
-        <div className='overflow-x-auto'>
-          <table className='min-w-full bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20'>
-            <thead>
-              <tr>
-                <th className='py-4 px-6 text-left text-teal-400 font-medium'>
-                  Servicio
-                </th>
-                <th className='py-4 px-6 text-left text-teal-400 font-medium'>
-                  Descripción
-                </th>
-                <th className='py-4 px-6 text-left text-teal-400 font-medium'>
-                  Beneficios Principales
-                </th>
-              </tr>
-            </thead>
-            <tbody className='divide-y divide-gray-700'>
-              <tr className='hover:bg-gray-700 transition-colors duration-200'>
-                <td className='py-4 px-6 text-white font-medium'>
-                  Desarrollo de Software
-                </td>
-                <td className='py-4 px-6 text-gray-300'>
-                  Desarrollamos soluciones tecnológicas personalizadas que optimizan
-                  procesos, mejoran la eficiencia y aceleran la transformación digital de
-                  tu empresa.
-                </td>
-                <td className='py-4 px-6'>
-                  <ul className='text-gray-300 space-y-1'>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span>{' '}
-                      Optimización de procesos
-                    </li>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span>{' '}
-                      Mayor eficiencia operativa
-                    </li>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span>{' '}
-                      Adaptabilidad al entorno digital
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr className='hover:bg-gray-700 transition-colors duration-200'>
-                <td className='py-4 px-6 text-white font-medium'>
-                  Automatización de Procesos
-                </td>
-                <td className='py-4 px-6 text-gray-300'>
-                  Implementamos soluciones tecnológicas para automatizar tareas
-                  repetitivas, optimizando tiempos y mejorando la productividad operativa.
-                </td>
-                <td className='py-4 px-6'>
-                  <ul className='text-gray-300 space-y-1'>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span>{' '}
-                      Mayor eficiencia
-                    </li>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span>{' '}
-                      Reducción de errores
-                    </li>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span>{' '}
-                      Ahorro de tiempo
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr className='hover:bg-gray-700 transition-colors duration-200'>
-                <td className='py-4 px-6 text-white font-medium'>Soporte de Redes</td>
-                <td className='py-4 px-6 text-gray-300'>
-                  Brindamos mantenimiento y gestión integral de infraestructuras de red,
-                  garantizando su disponibilidad, seguridad y rendimiento continuo.
-                </td>
-                <td className='py-4 px-6'>
-                  <ul className='text-gray-300 space-y-1'>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span> Alta
-                      disponibilidad
-                    </li>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span>{' '}
-                      Seguridad mejorada
-                    </li>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span>{' '}
-                      Monitoreo proactivo
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr className='hover:bg-gray-700 transition-colors duration-200'>
-                <td className='py-4 px-6 text-white font-medium'>Marketing Digital</td>
-                <td className='py-4 px-6 text-gray-300'>
-                  Desarrollamos estrategias digitales personalizadas para aumentar la
-                  visibilidad online y mejorar la conversión de clientes a través de SEO,
-                  SEM y redes sociales.
-                </td>
-                <td className='py-4 px-6'>
-                  <ul className='text-gray-300 space-y-1'>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span>{' '}
-                      Mayor visibilidad online
-                    </li>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span>{' '}
-                      Generación de leads
-                    </li>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span>{' '}
-                      Estrategias personalizadas
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr className='hover:bg-gray-700 transition-colors duration-200'>
-                <td className='py-4 px-6 text-white font-medium'>
-                  Servicios de Outsourcing Técnico
-                </td>
-                <td className='py-4 px-6 text-gray-300'>
-                  Ofrecemos soluciones de outsourcing de personal técnico especializado
-                  para apoyar en proyectos específicos, optimizando recursos.
-                </td>
-                <td className='py-4 px-6'>
-                  <ul className='text-gray-300 space-y-1'>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span>{' '}
-                      Reducción de costos
-                    </li>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span>{' '}
-                      Acceso a talento especializado
-                    </li>
-                    <li className='flex items-center'>
-                      <span className='h-2 w-2 rounded-full bg-teal-400 mr-2'></span>{' '}
-                      Flexibilidad en proyectos
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        {/* Posicionamiento */}
+        <div className='mt-16 p-6 bg-gray-800/50 rounded-lg border border-teal-500/20 text-center mb-10 border-card'>
+          <h3 className='text-2xl font-bold text-teal-400 mb-4'>POSICIONAMIENTO</h3>
+          <p className='text-gray-300'>
+            En InspireTech1923, somos{' '}
+            <span className='font-bold'>expertos apasionados por la innovación</span>,
+            especializados en ofrecer
+            <span className='font-bold'>
+              {' '}
+              soluciones empresariales que aceleren resultados:
+            </span>{' '}
+            Consultoría tecnológica estratégica, desarrollo de aplicaciones personalizadas
+            y soporte integral de infraestructura.
+          </p>
+        </div>
+
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
+          {/* Consultoría tecnológica */}
+          <div className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'>
+            <div className='p-6'>
+              <h3 className='text-xl font-bold text-teal-400 mb-4'>
+                Consultoría tecnológica y automatización
+              </h3>
+              <ul className='text-gray-300 space-y-3'>
+                <li className='flex items-start'>
+                  <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
+                  <span>Análisis y diagnóstico tecnológico</span>
+                </li>
+                <li className='flex items-start'>
+                  <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
+                  <span>Diseño de soluciones escalables</span>
+                </li>
+                <li className='flex items-start'>
+                  <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
+                  <span>Acompañamiento estratégico y digitalización</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Desarrollo de Software */}
+          <div className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'>
+            <div className='p-6'>
+              <h3 className='text-xl font-bold text-teal-400 mb-4'>
+                Desarrollo de Software
+              </h3>
+              <ul className='text-gray-300 space-y-3'>
+                <li className='flex items-start'>
+                  <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
+                  <span>Desarrollo de aplicaciones a medida</span>
+                </li>
+                <li className='flex items-start'>
+                  <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
+                  <span>Plataformas digitales personalizadas</span>
+                </li>
+                <li className='flex items-start'>
+                  <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
+                  <span>Soluciones empresariales que aceleran resultados</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Infraestructura Tecnológica */}
+          <div className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'>
+            <div className='p-6'>
+              <h3 className='text-xl font-bold text-teal-400 mb-4'>
+                Infraestructura Tecnológica
+              </h3>
+              <ul className='text-gray-300 space-y-3'>
+                <li className='flex items-start'>
+                  <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
+                  <span>Soporte y mantenimiento de redes 24/7</span>
+                </li>
+                <li className='flex items-start'>
+                  <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
+                  <span>Seguridad y escalabilidad de infraestructura</span>
+                </li>
+                <li className='flex items-start'>
+                  <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
+                  <span>Monitoreo proactivo y gestión de incidencias</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Outsourcing Técnico */}
+          <div className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'>
+            <div className='p-6'>
+              <h3 className='text-xl font-bold text-teal-400 mb-4'>
+                Outsourcing Técnico
+              </h3>
+              <ul className='text-gray-300 space-y-3'>
+                <li className='flex items-start'>
+                  <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
+                  <span>Personal técnico especializado</span>
+                </li>
+                <li className='flex items-start'>
+                  <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
+                  <span>Soporte para proyectos específicos</span>
+                </li>
+                <li className='flex items-start'>
+                  <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
+                  <span>Reducción de costos sin comprometer calidad</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -163,3 +128,4 @@ const Servicios = () => {
 }
 
 export default Servicios
+

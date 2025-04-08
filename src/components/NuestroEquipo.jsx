@@ -1,5 +1,5 @@
 import { ArrowRight, Code, HeartHandshake, Server, Users } from 'lucide-react'
-import React from 'react'
+import nuestroEquipoImg from '../assets/break.jpg'
 
 const NuestroEquipo = () => {
   return (
@@ -20,7 +20,7 @@ const NuestroEquipo = () => {
           <div className='md:w-1/2'>
             <div className='relative w-full h-80 rounded-xl overflow-hidden shadow-xl border border-teal-500/20'>
               <img
-                src='/api/placeholder/600/400'
+                src={nuestroEquipoImg}
                 alt='Equipo de trabajo'
                 className='w-full h-full object-cover'
               />

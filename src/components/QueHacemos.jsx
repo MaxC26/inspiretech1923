@@ -1,4 +1,4 @@
-import React from 'react'
+import queHacemosImg from '../assets/server-hub.jpg'
 
 const QueHacemos = () => {
   return (
@@ -16,19 +16,19 @@ const QueHacemos = () => {
               cada paso, desde la consultoría hasta el soporte continuo.
             </p>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8'>
-              <div className='bg-gray-800 p-4 rounded-lg border border-teal-500/20'>
+              <div className='bg-gray-800 p-4 rounded-lg border border-teal-500/20 border-card'>
                 <h3 className='font-semibold text-teal-400 mb-2'>Consultorías</h3>
                 <p className='text-gray-400 text-sm'>
                   Optimizamos procesos y ayudamos a tomar decisiones estratégicas.
                 </p>
               </div>
-              <div className='bg-gray-800 p-4 rounded-lg border border-teal-500/20'>
+              <div className='bg-gray-800 p-4 rounded-lg border border-teal-500/20 border-card'>
                 <h3 className='font-semibold text-teal-400 mb-2'>Desarrollo de Apps</h3>
                 <p className='text-gray-400 text-sm'>
                   Creamos plataformas digitales a medida para mejorar la productividad.
                 </p>
               </div>
-              <div className='bg-gray-800 p-4 rounded-lg border border-teal-500/20'>
+              <div className='bg-gray-800 p-4 rounded-lg border border-teal-500/20 border-card'>
                 <h3 className='font-semibold text-teal-400 mb-2'>Soporte Técnico</h3>
                 <p className='text-gray-400 text-sm'>
                   Brindamos soporte especializado para el funcionamiento óptimo.
@@ -39,7 +39,7 @@ const QueHacemos = () => {
           <div className='md:w-1/2 order-1 md:order-2'>
             <div className='relative w-full h-80 rounded-xl overflow-hidden shadow-xl border border-teal-500/20'>
               <img
-                src='/api/placeholder/600/400'
+                src={queHacemosImg}
                 alt='Desarrollo de código'
                 className='w-full h-full object-cover'
               />
