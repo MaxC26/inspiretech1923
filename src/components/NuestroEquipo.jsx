@@ -1,5 +1,5 @@
 import { ArrowRight, Code, HeartHandshake, Server, Users } from 'lucide-react'
-import nuestroEquipoImg from '../assets/break.jpg'
+import nuestroEquipoImg from '../assets/break.webp'
 
 const NuestroEquipo = () => {
   return (

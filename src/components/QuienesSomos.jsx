@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react'
-import quienesSomosImage from '../assets/typing-keyboard.jpg'
+import quienesSomosImage from '../assets/typing-keyboard.webp'
 
 const QuienesSomos = () => {
   return (

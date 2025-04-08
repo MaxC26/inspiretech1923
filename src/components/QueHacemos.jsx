@@ -1,4 +1,4 @@
-import queHacemosImg from '../assets/server-hub.jpg'
+import queHacemosImg from '../assets/server-hub.webp'
 
 const QueHacemos = () => {
   return (

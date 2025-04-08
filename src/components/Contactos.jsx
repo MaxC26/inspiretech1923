@@ -1,4 +1,4 @@
-import contactenosImg from '../assets/maps.png'
+import contactenosImg from '../assets/maps.webp'
 const Contactos = () => {
   return (
     <section id='contacto' className='py-20 bg-gray-800'>
