@@ -49,7 +49,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className='w-full mb-10 mt-1 md:w-1/2 md:mt-8 md:mt-0 md:mb-0'>
+          <div className='w-full mb-10 mt-1 md:w-1/2 md:mt-0 md:mb-0'>
             <div className='relative w-full h-64 md:h-80 lg:h-96 rounded-xl overflow-hidden shadow-2xl border border-teal-500/20'>
               <div className='absolute inset-0 bg-code-pattern opacity-30'></div>
               <div className='absolute inset-0 bg-gradient-to-br from-teal-500/20 to-blue-900/20'></div>
@@ -68,4 +68,3 @@ const Hero = () => {
 }
 
 export default Hero
-

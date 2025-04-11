@@ -1,5 +1,5 @@
-import contactenosImg from '../assets/maps.webp'
-const Contactos = () => {
+import contactenosImg from '../../assets/maps.webp'
+const Contacto = () => {
   return (
     <section id='contacto' className='py-20 bg-gray-800'>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
@@ -145,5 +145,4 @@ const Contactos = () => {
   )
 }
 
-export default Contactos
-
+export default Contacto
