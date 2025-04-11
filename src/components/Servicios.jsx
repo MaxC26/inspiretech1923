@@ -2,7 +2,7 @@ const Servicios = () => {
   return (
     <section id='servicios' className='py-20 bg-gray-900'>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
-        <div className='text-center mb-12'>
+        <div className='text-center mb-12' data-aos='fade-down'>
           <h2 className='text-3xl md:text-4xl font-bold mb-6 text-white'>
             Nuestros Servicios
           </h2>
@@ -13,7 +13,10 @@ const Servicios = () => {
           </p>
         </div>
 
-        <div className='mt-16 p-6 bg-gray-800/50 rounded-lg border border-teal-500/20 text-center mb-10 border-card'>
+        <div
+          className='mt-16 p-6 bg-gray-800/50 rounded-lg border border-teal-500/20 text-center mb-10 border-card'
+          data-aos='fade-up'
+        >
           <h3 className='text-2xl font-bold text-teal-400 mb-4'>POSICIONAMIENTO</h3>
           <p className='text-gray-300'>
             En InspireTech1923, somos{' '}
@@ -29,7 +32,10 @@ const Servicios = () => {
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
-          <div className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'>
+          <div
+            className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'
+            data-aos='fade-right'
+          >
             <div className='p-6'>
               <h3 className='text-xl font-bold text-teal-400 mb-4'>
                 Consultoría tecnológica y automatización
@@ -51,7 +57,10 @@ const Servicios = () => {
             </div>
           </div>
 
-          <div className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'>
+          <div
+            className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'
+            data-aos='fade-left'
+          >
             <div className='p-6'>
               <h3 className='text-xl font-bold text-teal-400 mb-4'>
                 Desarrollo de Software
@@ -73,7 +82,10 @@ const Servicios = () => {
             </div>
           </div>
 
-          <div className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'>
+          <div
+            className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'
+            data-aos='fade-right'
+          >
             <div className='p-6'>
               <h3 className='text-xl font-bold text-teal-400 mb-4'>
                 Infraestructura Tecnológica
@@ -95,7 +107,10 @@ const Servicios = () => {
             </div>
           </div>
 
-          <div className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'>
+          <div
+            className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'
+            data-aos='fade-left'
+          >
             <div className='p-6'>
               <h3 className='text-xl font-bold text-teal-400 mb-4'>
                 Outsourcing Técnico
@@ -123,4 +138,3 @@ const Servicios = () => {
 }
 
 export default Servicios
-

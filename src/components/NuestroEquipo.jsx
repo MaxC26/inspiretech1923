@@ -5,7 +5,7 @@ const NuestroEquipo = () => {
   return (
     <section id='equipo' className='py-20 bg-gray-800'>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
-        <div className='text-center mb-12'>
+        <div className='text-center mb-12' data-aos='fade-down'>
           <h2 className='text-3xl md:text-4xl font-bold mb-6 text-white'>
             Nuestro Equipo
           </h2>
@@ -17,7 +17,7 @@ const NuestroEquipo = () => {
           </p>
         </div>
         <div className='flex flex-col md:flex-row items-center gap-8'>
-          <div className='md:w-1/2'>
+          <div className='md:w-1/2' data-aos='fade-right'>
             <div className='relative w-full h-80 rounded-xl overflow-hidden shadow-xl border border-teal-500/20'>
               <img
                 src={nuestroEquipoImg}
@@ -28,7 +28,10 @@ const NuestroEquipo = () => {
           </div>
           <div className='md:w-1/2'>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-              <div className='bg-gray-900 p-6 rounded-lg border border-teal-500/20 border-card'>
+              <div
+                className='bg-gray-900 p-6 rounded-lg border border-teal-500/20 border-card'
+                data-aos='fade-up'
+              >
                 <Users className='h-10 w-10 text-teal-400 mb-4' />
                 <h3 className='font-semibold text-white text-lg mb-2'>
                   Equipo Multidisciplinario
@@ -37,7 +40,10 @@ const NuestroEquipo = () => {
                   Ingenieros, diseñadores y especialistas en tecnología trabajando juntos.
                 </p>
               </div>
-              <div className='bg-gray-900 p-6 rounded-lg border border-teal-500/20 border-card'>
+              <div
+                className='bg-gray-900 p-6 rounded-lg border border-teal-500/20 border-card'
+                data-aos='fade-up'
+              >
                 <Code className='h-10 w-10 text-teal-400 mb-4' />
                 <h3 className='font-semibold text-white text-lg mb-2'>
                   Desarrolladores Senior
@@ -46,7 +52,10 @@ const NuestroEquipo = () => {
                   Profesionales con experiencia en las tecnologías más recientes.
                 </p>
               </div>
-              <div className='bg-gray-900 p-6 rounded-lg border border-teal-500/20 border-card'>
+              <div
+                className='bg-gray-900 p-6 rounded-lg border border-teal-500/20 border-card'
+                data-aos='fade-up'
+              >
                 <Server className='h-10 w-10 text-teal-400 mb-4' />
                 <h3 className='font-semibold text-white text-lg mb-2'>
                   Infraestructura Sólida
@@ -55,7 +64,10 @@ const NuestroEquipo = () => {
                   Arquitectos de sistemas y especialistas en redes y seguridad.
                 </p>
               </div>
-              <div className='bg-gray-900 p-6 rounded-lg border border-teal-500/20 border-card'>
+              <div
+                className='bg-gray-900 p-6 rounded-lg border border-teal-500/20 border-card'
+                data-aos='fade-up'
+              >
                 <HeartHandshake className='h-10 w-10 text-teal-400 mb-4' />
                 <h3 className='font-semibold text-white text-lg mb-2'>
                   Atención Personalizada
@@ -81,4 +93,3 @@ const NuestroEquipo = () => {
 }
 
 export default NuestroEquipo
-

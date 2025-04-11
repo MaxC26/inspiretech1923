@@ -1,7 +1,16 @@
 import './App.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import HomePage from './pages/HomePage'
+import { useEffect } from 'react'
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    })
+  }, [])
+
   return (
     <>
       <HomePage />
@@ -10,4 +19,3 @@ function App() {
 }
 
 export default App
-

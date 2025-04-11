@@ -6,7 +6,7 @@ const QuienesSomos = () => {
     <section id='quienes-somos' className='py-20 bg-gray-800'>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex flex-col md:flex-row items-center gap-8'>
-          <div className='md:w-1/2'>
+          <div className='md:w-1/2' data-aos='fade-right'>
             <div className='relative w-full h-80 rounded-xl overflow-hidden shadow-xl border border-teal-500/20'>
               <img
                 src={quienesSomosImage}
@@ -15,7 +15,7 @@ const QuienesSomos = () => {
               />
             </div>
           </div>
-          <div className='md:w-1/2'>
+          <div className='md:w-1/2' data-aos='fade-left'>
             <h2 className='text-3xl md:text-4xl font-bold mb-6 text-white'>
               ¿Quiénes somos?
             </h2>
@@ -45,4 +45,3 @@ const QuienesSomos = () => {
 }
 
 export default QuienesSomos
-
