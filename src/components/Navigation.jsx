@@ -3,17 +3,18 @@ import logoinspiretech1923 from '../assets/logoinspiretech1923.png'
 
 const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
   return (
-    <nav className='fixed w-full bg-gray-900 bg-opacity-90 z-50 shadow-lg border-b border-teal-500/30'>
+    <nav className='fixed w-full bg-gray-900 bg-opacity-90 z-50'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between h-16'>
           <div className='flex items-center'>
             <div className='flex-shrink-0'>
               <div className='flex items-center'>
-                <img src={logoinspiretech1923} className='w-[30px]' />
-                <span className='ml-2 text-xl font-semibold'>
-                  INSPIRETECH
-                  <span className='text-sm align-top text-teal-400'>1923</span>
-                </span>
+                <img src={logoinspiretech1923} className='w-[30px] md:w-[40px] h-auto' />
+                <span className='ml-2 text-lg md:text-xl font-semibold'>INSPIRETECH</span>
+                <div className='text-teal-400 ml-1.5 leading-none'>
+                  <span className='text-[8px] block -ml-1 font-semibold'>19</span>
+                  <span className='text-[8px] block -ml-1 font-semibold'>23</span>
+                </div>
               </div>
             </div>
             <div className='hidden md:block'>

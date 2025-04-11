@@ -5,24 +5,27 @@ const Hero = () => {
   return (
     <section
       id='inicio'
-      className='relative bg-gray-900 min-h-screen flex items-center pt-30 md:pt-0'
+      className='relative bg-gray-900 min-h-screen flex items-center pt-30 md:pt-0 '
     >
-      <div className='absolute inset-0 z-0 '>
-        <div className='absolute inset-0 bg-gradient-to-r from-gray-900 to-transparent z-10'></div>
-        <div className="w-full h-full bg-[url('/api/placeholder/1200/800')] bg-cover bg-center opacity-30"></div>
-        <div className='absolute inset-0 bg-grid-pattern opacity-10'></div>
-      </div>
+      <div className='animated-gradient'></div>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8 relative z-10'>
         <div className='flex flex-col md:flex-row items-center justify-between gap-8'>
           <div className='md:w-1/2'>
             <div className='flex items-center mb-4'>
-              <img src={logoinspiretech1923} alt='' className='w-[70px]' />
-              <h1 className='ml-3 text-4xl md:text-5xl lg:text-6xl font-bold text-white'>
-                INSPIRETECH
-                <span className='text-xl md:text-2xl lg:text-3xl align-top text-teal-400'>
-                  1923
-                </span>
-              </h1>
+              <img src={logoinspiretech1923} alt='' className='w-[70px] h-auto' />
+              <div className='flex items-center'>
+                <h1 className='ml-3 text-4xl md:text-5xl lg:text-6xl font-bold text-white'>
+                  INSPIRETECH
+                </h1>
+                <div className='text-teal-400 ml-1 leading-none'>
+                  <span className='text-[15px] md:text-xl lg:text-2xl block font-bold'>
+                    19
+                  </span>
+                  <span className='text-[15px] md:text-xl lg:text-2xl block font-bold -mt-0 md:-mt-2'>
+                    23
+                  </span>
+                </div>
+              </div>
             </div>
             <p className='text-xl md:text-2xl text-gray-300 mb-6'>
               Transformando ideas en soluciones tecnológicas innovadoras

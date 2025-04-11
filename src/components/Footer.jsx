@@ -4,18 +4,15 @@ const Footer = () => {
   return (
     <footer className='bg-gray-900 text-gray-300'>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
-        {/* Top Footer Section */}
         <div className='py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
-          {/* Logo & About */}
           <div>
             <div className='flex items-center mb-4'>
-              <div className='h-8 w-8 rounded-md flex items-center justify-center mr-2'>
-                <img src={logoinspiretech1923} />
+              <img src={logoinspiretech1923} className='w-[30px] md:w-[40px] h-auto' />
+              <span className='ml-2 text-lg md:text-xl font-semibold'>INSPIRETECH</span>
+              <div className='text-teal-400 ml-1.5 leading-none'>
+                <span className='text-[8px] block -ml-1 font-semibold'>19</span>
+                <span className='text-[8px] block -ml-1 font-semibold'>23</span>
               </div>
-              <span className='text-xl font-semibold'>
-                INSPIRETECH
-                <span className='text-sm align-top text-teal-400'>1923</span>
-              </span>
             </div>
             <p className='text-gray-400 text-sm mb-4'>
               Soluciones tecnológicas innovadoras para impulsar tu negocio en la era
@@ -126,7 +123,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className='text-white font-bold text-lg mb-4'>Enlaces Rápidos</h3>
             <ul className='space-y-2'>
@@ -220,7 +216,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
           <div>
             <h3 className='text-white font-bold text-lg mb-4'>
               Suscríbete a nuestro boletín
@@ -269,10 +264,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
         <div className='border-t border-gray-800 my-4'></div>
 
-        {/* Bottom Footer */}
         <div className='py-6 flex flex-col md:flex-row justify-between items-center'>
           <p className='text-gray-400 text-sm mb-4 md:mb-0'>
             © {new Date().getFullYear()} InspireTech1923. Todos los derechos reservados.

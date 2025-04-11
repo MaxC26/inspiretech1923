@@ -24,7 +24,6 @@ const Contactos = () => {
           <div className='md:w-1/2'>
             <h2 className='text-3xl md:text-4xl font-bold mb-6 text-white flex items-center'>
               <span className='mr-2'>Contáctanos</span>
-              <span className='inline-block w-10 h-1 bg-teal-400 rounded-full'></span>
             </h2>
             <p className='text-gray-300 mb-8'>
               Nos encantará formar parte del crecimiento de tu empresa. Completa el

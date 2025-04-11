@@ -13,7 +13,6 @@ const Servicios = () => {
           </p>
         </div>
 
-        {/* Posicionamiento */}
         <div className='mt-16 p-6 bg-gray-800/50 rounded-lg border border-teal-500/20 text-center mb-10 border-card'>
           <h3 className='text-2xl font-bold text-teal-400 mb-4'>POSICIONAMIENTO</h3>
           <p className='text-gray-300'>
@@ -30,7 +29,6 @@ const Servicios = () => {
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
-          {/* Consultoría tecnológica */}
           <div className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'>
             <div className='p-6'>
               <h3 className='text-xl font-bold text-teal-400 mb-4'>
@@ -53,7 +51,6 @@ const Servicios = () => {
             </div>
           </div>
 
-          {/* Desarrollo de Software */}
           <div className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'>
             <div className='p-6'>
               <h3 className='text-xl font-bold text-teal-400 mb-4'>
@@ -76,7 +73,6 @@ const Servicios = () => {
             </div>
           </div>
 
-          {/* Infraestructura Tecnológica */}
           <div className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'>
             <div className='p-6'>
               <h3 className='text-xl font-bold text-teal-400 mb-4'>
@@ -99,7 +95,6 @@ const Servicios = () => {
             </div>
           </div>
 
-          {/* Outsourcing Técnico */}
           <div className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'>
             <div className='p-6'>
               <h3 className='text-xl font-bold text-teal-400 mb-4'>
