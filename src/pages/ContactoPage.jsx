@@ -1,13 +1,9 @@
 import { useEffect, useState } from 'react'
-import Navigation from '../components/Navigation'
-import Hero from '../components/Hero'
-import QuienesSomos from '../components/QuienesSomos'
-import QueHacemos from '../components/QueHacemos'
-import NuestroEquipo from '../components/NuestroEquipo'
-import Servicios from '../components/Servicios'
 import Footer from '../components/Footer'
+import Navigation from '../components/Navigation'
+import Contacto from '../components/contacto/Contacto'
 
-const HomePage = () => {
+const ContactoPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('inicio')
 
@@ -30,20 +26,16 @@ const HomePage = () => {
   }, [])
 
   return (
-    <div className='min-h-screen bg-gray-900 text-white font-sans'>
+    <div>
       <Navigation
         activeSection={activeSection}
         mobileMenuOpen={mobileMenuOpen}
         setMobileMenuOpen={setMobileMenuOpen}
       />
-      <Hero />
-      <QuienesSomos />
-      <QueHacemos />
-      <NuestroEquipo />
-      <Servicios />
+      <Contacto />
       <Footer />
     </div>
   )
 }
 
-export default HomePage
+export default ContactoPage

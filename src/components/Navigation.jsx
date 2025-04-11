@@ -1,21 +1,30 @@
 import { Menu, X } from 'lucide-react'
 import logoinspiretech1923 from '../assets/logoinspiretech1923.png'
+import { Link, useNavigate } from 'react-router-dom'
+import { routes } from '../utils/rutas'
 
 const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
+  const navigate = useNavigate()
+
   return (
     <nav className='fixed w-full bg-gray-900 bg-opacity-90 z-50'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between h-16'>
           <div className='flex items-center'>
             <div className='flex-shrink-0'>
-              <div className='flex items-center'>
+              <button
+                className='flex items-center cursor-pointer'
+                onClick={() => navigate(routes.frontend.home)}
+              >
                 <img src={logoinspiretech1923} className='w-[30px] md:w-[40px] h-auto' />
-                <span className='ml-2 text-lg md:text-xl font-semibold'>INSPIRETECH</span>
+                <span className='ml-2 text-lg md:text-xl font-semibold text-white'>
+                  INSPIRETECH
+                </span>
                 <div className='text-teal-400 ml-1.5 leading-none'>
                   <span className='text-[8px] block -ml-1 font-semibold'>19</span>
                   <span className='text-[8px] block -ml-1 font-semibold'>23</span>
                 </div>
-              </div>
+              </button>
             </div>
             <div className='hidden md:block'>
               <div className='ml-10 flex items-baseline space-x-4'>
@@ -69,8 +78,8 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
                 >
                   Servicios
                 </a>
-                <a
-                  href='#contacto'
+                <Link
+                  to={routes.frontend.contacto}
                   className={`px-3 py-2 rounded-md text-sm font-medium ${
                     activeSection === 'contacto'
                       ? 'text-teal-400 border-b-2 border-teal-400'
@@ -78,7 +87,7 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
                   }`}
                 >
                   Contacto
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -180,4 +189,3 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
 }
 
 export default Navigation
-
