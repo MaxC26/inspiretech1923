@@ -4,9 +4,15 @@ import { validarContacto } from '../../utils/formValidation'
 const ContactoForm = () => {
   const onSubmitForm = async (values) => {
     try {
-      console.log(values)
-      // const hashedPass = await bcrypt.hash(values.password, 10)
-      // const response = await login(values)
+      const response = await new Promise((resolve) => {
+        setTimeout(() => {
+          resolve({
+            status: 200,
+            data: values,
+          })
+        }, 1000)
+      })
+      console.log('🚀 ~ response ~ response:', response)
     } catch (error) {
       console.error(error)
     }
@@ -79,6 +85,7 @@ const ContactoForm = () => {
                     errors.telefonoEmpresa && 'input-error'
                   }`}
                   placeholder='Teléfono de tu empresa'
+                  maxLength={8}
                 />
                 {errors.telefonoEmpresa && (
                   <div className='text-red-400'>{'*' + errors.telefonoEmpresa}</div>

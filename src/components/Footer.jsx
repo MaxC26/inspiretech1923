@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom'
 import logoinspiretech1923 from '../assets/logoinspiretech1923.png'
+import { routes } from '../utils/rutas'
 
 const Footer = () => {
   return (
@@ -166,13 +168,13 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href='#contacto'
+                <Link
+                  to={routes.frontend.contacto}
                   className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
                 >
                   <span className='mr-2'>→</span>
                   <span className='hover:underline'>Contacto</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

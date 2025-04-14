@@ -6,8 +6,9 @@ export const validarContacto = Yup.object().shape({
   telefonoEmpresa: Yup.string()
     .required('Campo requerido')
     .matches(/^\d+$/, 'Solo números')
-    .min(8, 'Debe escribir 8 caracteres'),
-  // correoEmpresa: Yup.string().required('Campo requerido'),
+    .min(8, 'Debe escribir 8 caracteres')
+    .max(8, 'Máximo 8 caracteres'),
+  correoEmpresa: Yup.string().email('Email inválido'),
   // sectorEmpresa: Yup.string().required('Campo requerido'),
   // mensaje: Yup.string().required('Campo requerido'),
 })
