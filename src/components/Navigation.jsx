@@ -179,6 +179,7 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
           </a>
           <Link
             to={routes.frontend.contacto}
+            onClick={() => setMobileMenuOpen(false)}
             className={`block px-3 py-2 rounded-md text-base font-medium ${
               activeSection === 'contacto'
                 ? 'bg-gray-800 text-teal-400'
