@@ -3,7 +3,7 @@ import quienesSomosImage from '../assets/typing-keyboard.webp'
 
 const QuienesSomos = () => {
   return (
-    <section id='quienes-somos' className='py-20 bg-gray-800'>
+    <section id='quienes-somos' className='py-20 bg-gray-900'>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex flex-col md:flex-row items-center gap-8'>
           <div className='md:w-1/2' data-aos='fade-right'>

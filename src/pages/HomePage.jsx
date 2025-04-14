@@ -6,10 +6,13 @@ import QueHacemos from '../components/QueHacemos'
 import NuestroEquipo from '../components/NuestroEquipo'
 import Servicios from '../components/Servicios'
 import Footer from '../components/Footer'
+import { useLocation } from 'react-router-dom'
 
 const HomePage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('inicio')
+
+  const location = useLocation()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,9 +28,19 @@ const HomePage = () => {
       })
     }
 
+    // 👇 Esto es lo que agregás para hacer scroll cuando hay un hash
+    if (location.hash) {
+      const el = document.querySelector(location.hash)
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' })
+        }, 100) // da tiempo a que los componentes se monten
+      }
+    }
+
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [location])
 
   return (
     <div className='min-h-screen bg-gray-900 text-white font-sans'>
@@ -47,4 +60,3 @@ const HomePage = () => {
 }
 
 export default HomePage
-

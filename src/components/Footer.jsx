@@ -1,8 +1,10 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import logoinspiretech1923 from '../assets/logoinspiretech1923.png'
 import { routes } from '../utils/rutas'
 
 const Footer = () => {
+  const location = useLocation()
+
   return (
     <footer className='bg-gray-900 text-gray-300'>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
@@ -132,50 +134,92 @@ const Footer = () => {
             <h3 className='text-white font-bold text-lg mb-4'>Enlaces Rápidos</h3>
             <ul className='space-y-2'>
               <li>
-                <a
-                  href='#inicio'
-                  className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
-                >
-                  <span className='mr-2'>→</span>{' '}
-                  <span className='hover:underline'>Inicio</span>
-                </a>
+                {location.pathname !== routes.frontend.contacto ? (
+                  <a
+                    href='#inicio'
+                    className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
+                  >
+                    <span className='mr-2'>→</span>{' '}
+                    <span className='hover:underline'>Inicio</span>
+                  </a>
+                ) : (
+                  <Link
+                    to={`${routes.frontend.home}#inicio`}
+                    className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
+                  >
+                    <span className='mr-2'>→</span>{' '}
+                    <span className='hover:underline'>Inicio</span>
+                  </Link>
+                )}
               </li>
               <li>
-                <a
-                  href='#servicios'
-                  className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
-                >
-                  <span className='mr-2'>→</span>{' '}
-                  <span className='hover:underline'>Servicios</span>
-                </a>
+                {location.pathname !== routes.frontend.contacto ? (
+                  <a
+                    href='#servicios'
+                    className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
+                  >
+                    <span className='mr-2'>→</span>{' '}
+                    <span className='hover:underline'>Servicios</span>
+                  </a>
+                ) : (
+                  <Link
+                    to={`${routes.frontend.home}#servicios`}
+                    className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
+                  >
+                    <span className='mr-2'>→</span>{' '}
+                    <span className='hover:underline'>Servicios</span>
+                  </Link>
+                )}
               </li>
               <li>
-                <a
-                  href='#nosotros'
-                  className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
-                >
-                  <span className='mr-2'>→</span>
-                  <span className='hover:underline'>Nosotros</span>
-                </a>
+                {location.pathname !== routes.frontend.contacto ? (
+                  <a
+                    href='#que-hacemos'
+                    className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
+                  >
+                    <span className='mr-2'>→</span>
+                    <span className='hover:underline'>Nosotros</span>
+                  </a>
+                ) : (
+                  <Link
+                    to={`${routes.frontend.home}#que-hacemos`}
+                    className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
+                  >
+                    <span className='mr-2'>→</span>
+                    <span className='hover:underline'>Nosotros</span>
+                  </Link>
+                )}
               </li>
               <li>
-                <a
-                  href='#equipo'
-                  className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
-                >
-                  <span className='mr-2'>→</span>
-                  <span className='hover:underline'>Equipo</span>
-                </a>
+                {location.pathname !== routes.frontend.contacto ? (
+                  <a
+                    href='#equipo'
+                    className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
+                  >
+                    <span className='mr-2'>→</span>
+                    <span className='hover:underline'>Equipo</span>
+                  </a>
+                ) : (
+                  <Link
+                    to={`${routes.frontend.home}#equipo`}
+                    className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
+                  >
+                    <span className='mr-2'>→</span>
+                    <span className='hover:underline'>Equipo</span>
+                  </Link>
+                )}
               </li>
-              <li>
-                <Link
-                  to={routes.frontend.contacto}
-                  className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
-                >
-                  <span className='mr-2'>→</span>
-                  <span className='hover:underline'>Contacto</span>
-                </Link>
-              </li>
+              {location.pathname !== routes.frontend.contacto && (
+                <li>
+                  <Link
+                    to={routes.frontend.contacto}
+                    className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
+                  >
+                    <span className='mr-2'>→</span>
+                    <span className='hover:underline'>Contacto</span>
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
 

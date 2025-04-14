@@ -2,7 +2,7 @@ import queHacemosImg from '../assets/server-hub.webp'
 
 const QueHacemos = () => {
   return (
-    <section id='que-hacemos' className='py-20 bg-gray-900'>
+    <section id='que-hacemos' className='py-20 bg-gray-800'>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex flex-col md:flex-row items-center gap-8'>
           <div className='md:w-1/2 order-2 md:order-1'>
@@ -19,7 +19,7 @@ const QueHacemos = () => {
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8'>
               <div
-                className='bg-gray-800 p-4 rounded-lg border border-teal-500/20 border-card'
+                className='bg-gray-900 p-4 rounded-lg border border-teal-500/20 border-card transform hover:scale-105 transition-all duration-300 hover:shadow-teal-900/20 shadow-lg hover:border-teal-500/50'
                 data-aos='fade-up'
               >
                 <h3 className='font-semibold text-teal-400 mb-2'>Consultorías</h3>
@@ -28,7 +28,7 @@ const QueHacemos = () => {
                 </p>
               </div>
               <div
-                className='bg-gray-800 p-4 rounded-lg border border-teal-500/20 border-card'
+                className='bg-gray-900 p-4 rounded-lg border border-teal-500/20 border-card transform hover:scale-105 transition-all duration-300 hover:shadow-teal-900/20 shadow-lg hover:border-teal-500/50'
                 data-aos='fade-up'
               >
                 <h3 className='font-semibold text-teal-400 mb-2'>Desarrollo de Apps</h3>
@@ -37,7 +37,7 @@ const QueHacemos = () => {
                 </p>
               </div>
               <div
-                className='bg-gray-800 p-4 rounded-lg border border-teal-500/20 border-card'
+                className='bg-gray-900 p-4 rounded-lg border border-teal-500/20 border-card transform hover:scale-105 transition-all duration-300 hover:shadow-teal-900/20 shadow-lg hover:border-teal-500/50'
                 data-aos='fade-up'
               >
                 <h3 className='font-semibold text-teal-400 mb-2'>Soporte Técnico</h3>
