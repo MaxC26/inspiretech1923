@@ -171,8 +171,8 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
           >
             Servicios
           </a>
-          <a
-            href='#contacto'
+          <Link
+            to={routes.frontend.contacto}
             onClick={() => setMobileMenuOpen(false)}
             className={`block px-3 py-2 rounded-md text-base font-medium ${
               activeSection === 'contacto'
@@ -181,7 +181,7 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
             }`}
           >
             Contacto
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
