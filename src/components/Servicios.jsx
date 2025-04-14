@@ -35,7 +35,7 @@ const Servicios = () => {
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
           <div
-            className='group bg-gray-900 rounded-lg overflow-hidden border border-teal-500/20 
+            className='bg-gray-900 rounded-lg overflow-hidden border border-teal-500/20 
             hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 
             transform hover:scale-105'
             data-aos='fade-right'
@@ -48,28 +48,22 @@ const Servicios = () => {
               <ul className='text-gray-300 space-y-3'>
                 <li className='flex items-start'>
                   <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
-                  <span className='group-hover:underline'>
-                    Análisis y diagnóstico tecnológico
-                  </span>
+                  <span>Análisis y diagnóstico tecnológico</span>
                 </li>
                 <li className='flex items-start'>
                   <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
-                  <span className='group-hover:underline'>
-                    Diseño de soluciones escalables
-                  </span>
+                  <span>Diseño de soluciones escalables</span>
                 </li>
                 <li className='flex items-start'>
                   <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
-                  <span className='group-hover:underline'>
-                    Acompañamiento estratégico y digitalización
-                  </span>
+                  <span>Acompañamiento estratégico y digitalización</span>
                 </li>
               </ul>
             </div>
           </div>
 
           <div
-            className='group bg-gray-900 rounded-lg overflow-hidden border border-teal-500/20 
+            className='bg-gray-900 rounded-lg overflow-hidden border border-teal-500/20 
             hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 
             transform hover:scale-105'
             data-aos='fade-left'
@@ -82,28 +76,22 @@ const Servicios = () => {
               <ul className='text-gray-300 space-y-3'>
                 <li className='flex items-start'>
                   <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
-                  <span className='group-hover:underline'>
-                    Desarrollo de aplicaciones a medida
-                  </span>
+                  <span>Desarrollo de aplicaciones a medida</span>
                 </li>
                 <li className='flex items-start'>
                   <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
-                  <span className='group-hover:underline'>
-                    Plataformas digitales personalizadas
-                  </span>
+                  <span>Plataformas digitales personalizadas</span>
                 </li>
                 <li className='flex items-start'>
                   <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
-                  <span className='group-hover:underline'>
-                    Soluciones empresariales que aceleran resultados
-                  </span>
+                  <span>Soluciones empresariales que aceleran resultados</span>
                 </li>
               </ul>
             </div>
           </div>
 
           <div
-            className='group bg-gray-900 rounded-lg overflow-hidden border border-teal-500/20 
+            className='bg-gray-900 rounded-lg overflow-hidden border border-teal-500/20 
             hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 
             transform hover:scale-105'
             data-aos='fade-right'
@@ -116,28 +104,22 @@ const Servicios = () => {
               <ul className='text-gray-300 space-y-3'>
                 <li className='flex items-start'>
                   <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
-                  <span className='group-hover:underline'>
-                    Soporte y mantenimiento de redes 24/7
-                  </span>
+                  <span>Soporte y mantenimiento de redes 24/7</span>
                 </li>
                 <li className='flex items-start'>
                   <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
-                  <span className='group-hover:underline'>
-                    Seguridad y escalabilidad de infraestructura
-                  </span>
+                  <span>Seguridad y escalabilidad de infraestructura</span>
                 </li>
                 <li className='flex items-start'>
                   <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
-                  <span className='group-hover:underline'>
-                    Monitoreo proactivo y gestión de incidencias
-                  </span>
+                  <span>Monitoreo proactivo y gestión de incidencias</span>
                 </li>
               </ul>
             </div>
           </div>
 
           <div
-            className='group bg-gray-900 rounded-lg overflow-hidden border border-teal-500/20 
+            className='bg-gray-900 rounded-lg overflow-hidden border border-teal-500/20 
             hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 
             transform hover:scale-105'
             data-aos='fade-left'
@@ -150,21 +132,15 @@ const Servicios = () => {
               <ul className='text-gray-300 space-y-3'>
                 <li className='flex items-start'>
                   <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
-                  <span className='group-hover:underline'>
-                    Personal técnico especializado
-                  </span>
+                  <span>Personal técnico especializado</span>
                 </li>
                 <li className='flex items-start'>
                   <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
-                  <span className='group-hover:underline'>
-                    Soporte para proyectos específicos
-                  </span>
+                  <span>Soporte para proyectos específicos</span>
                 </li>
                 <li className='flex items-start'>
                   <span className='h-2 w-2 rounded-full bg-teal-400 mr-2 mt-2'></span>
-                  <span className='group-hover:underline'>
-                    Reducción de costos sin comprometer calidad
-                  </span>
+                  <span>Reducción de costos sin comprometer calidad</span>
                 </li>
               </ul>
             </div>
