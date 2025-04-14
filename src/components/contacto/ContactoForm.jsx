@@ -13,7 +13,7 @@ const ContactoForm = () => {
   }
 
   return (
-    <div className='card w-full  shadow-xl '>
+    <div className='card w-full  shadow-xl bg-gray-900 border-teal-500/20'>
       <div className='card-body'>
         <p className='text-center mb-5 text-white'>
           ¿Quieres que te ayudemos? Completa el formulario y nos pondremos en contacto
@@ -132,7 +132,7 @@ const ContactoForm = () => {
 
               <button
                 type='submit'
-                className='btn btn-primary w-full'
+                className='btn bg-teal-600 hover:bg-teal-700 text-white border-teal-600 w-full shadow-none'
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (

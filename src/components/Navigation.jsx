@@ -29,7 +29,7 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
             </div>
             <div className='hidden md:block'>
               <div className='ml-10 flex items-baseline space-x-4'>
-                {routes.frontend.contacto !== location.pathname && (
+                {location.pathname !== routes.frontend.contacto && (
                   <>
                     <a
                       href='#inicio'
@@ -97,99 +97,103 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
               </div>
             </div>
           </div>
-          <div className='-mr-2 flex md:hidden'>
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              type='button'
-              className='bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none'
-              aria-controls='mobile-menu'
-              aria-expanded='false'
-            >
-              <span className='sr-only'>Open main menu</span>
-              {mobileMenuOpen ? (
-                <X className='block h-6 w-6' />
-              ) : (
-                <Menu className='block h-6 w-6' />
-              )}
-            </button>
-          </div>
+          {location.pathname !== routes.frontend.contacto && (
+            <div className='-mr-2 flex md:hidden'>
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                type='button'
+                className='bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none'
+                aria-controls='mobile-menu'
+                aria-expanded='false'
+              >
+                <span className='sr-only'>Open main menu</span>
+                {mobileMenuOpen ? (
+                  <X className='block h-6 w-6' />
+                ) : (
+                  <Menu className='block h-6 w-6' />
+                )}
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
       {/* Mobile menu */}
-      <div
-        className={`${mobileMenuOpen ? 'block' : 'hidden'} md:hidden`}
-        id='mobile-menu'
-      >
-        <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-          <a
-            href='#inicio'
-            onClick={() => setMobileMenuOpen(false)}
-            className={`block px-3 py-2 rounded-md text-base font-medium ${
-              activeSection === 'inicio'
-                ? 'bg-gray-800 text-teal-400'
-                : 'text-gray-300 hover:bg-gray-700 hover:text-white'
-            }`}
-          >
-            Inicio
-          </a>
-          <a
-            href='#quienes-somos'
-            onClick={() => setMobileMenuOpen(false)}
-            className={`block px-3 py-2 rounded-md text-base font-medium ${
-              activeSection === 'quienes-somos'
-                ? 'bg-gray-800 text-teal-400'
-                : 'text-gray-300 hover:bg-gray-700 hover:text-white'
-            }`}
-          >
-            ¿Quiénes Somos?
-          </a>
-          <a
-            href='#que-hacemos'
-            onClick={() => setMobileMenuOpen(false)}
-            className={`block px-3 py-2 rounded-md text-base font-medium ${
-              activeSection === 'que-hacemos'
-                ? 'bg-gray-800 text-teal-400'
-                : 'text-gray-300 hover:bg-gray-700 hover:text-white'
-            }`}
-          >
-            ¿Qué Hacemos?
-          </a>
-          <a
-            href='#equipo'
-            onClick={() => setMobileMenuOpen(false)}
-            className={`block px-3 py-2 rounded-md text-base font-medium ${
-              activeSection === 'equipo'
-                ? 'bg-gray-800 text-teal-400'
-                : 'text-gray-300 hover:bg-gray-700 hover:text-white'
-            }`}
-          >
-            Nuestro Equipo
-          </a>
-          <a
-            href='#servicios'
-            onClick={() => setMobileMenuOpen(false)}
-            className={`block px-3 py-2 rounded-md text-base font-medium ${
-              activeSection === 'servicios'
-                ? 'bg-gray-800 text-teal-400'
-                : 'text-gray-300 hover:bg-gray-700 hover:text-white'
-            }`}
-          >
-            Servicios
-          </a>
-          <Link
-            to={routes.frontend.contacto}
-            onClick={() => setMobileMenuOpen(false)}
-            className={`block px-3 py-2 rounded-md text-base font-medium ${
-              activeSection === 'contacto'
-                ? 'bg-gray-800 text-teal-400'
-                : 'text-gray-300 hover:bg-gray-700 hover:text-white'
-            }`}
-          >
-            Contacto
-          </Link>
+      {location.pathname !== routes.frontend.contacto && (
+        <div
+          className={`${mobileMenuOpen ? 'block' : 'hidden'} md:hidden`}
+          id='mobile-menu'
+        >
+          <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
+            <a
+              href='#inicio'
+              onClick={() => setMobileMenuOpen(false)}
+              className={`block px-3 py-2 rounded-md text-base font-medium ${
+                activeSection === 'inicio'
+                  ? 'bg-gray-800 text-teal-400'
+                  : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+              }`}
+            >
+              Inicio
+            </a>
+            <a
+              href='#quienes-somos'
+              onClick={() => setMobileMenuOpen(false)}
+              className={`block px-3 py-2 rounded-md text-base font-medium ${
+                activeSection === 'quienes-somos'
+                  ? 'bg-gray-800 text-teal-400'
+                  : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+              }`}
+            >
+              ¿Quiénes Somos?
+            </a>
+            <a
+              href='#que-hacemos'
+              onClick={() => setMobileMenuOpen(false)}
+              className={`block px-3 py-2 rounded-md text-base font-medium ${
+                activeSection === 'que-hacemos'
+                  ? 'bg-gray-800 text-teal-400'
+                  : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+              }`}
+            >
+              ¿Qué Hacemos?
+            </a>
+            <a
+              href='#equipo'
+              onClick={() => setMobileMenuOpen(false)}
+              className={`block px-3 py-2 rounded-md text-base font-medium ${
+                activeSection === 'equipo'
+                  ? 'bg-gray-800 text-teal-400'
+                  : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+              }`}
+            >
+              Nuestro Equipo
+            </a>
+            <a
+              href='#servicios'
+              onClick={() => setMobileMenuOpen(false)}
+              className={`block px-3 py-2 rounded-md text-base font-medium ${
+                activeSection === 'servicios'
+                  ? 'bg-gray-800 text-teal-400'
+                  : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+              }`}
+            >
+              Servicios
+            </a>
+            <Link
+              to={routes.frontend.contacto}
+              onClick={() => setMobileMenuOpen(false)}
+              className={`block px-3 py-2 rounded-md text-base font-medium ${
+                activeSection === 'contacto'
+                  ? 'bg-gray-800 text-teal-400'
+                  : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+              }`}
+            >
+              Contacto
+            </Link>
+          </div>
         </div>
-      </div>
+      )}
     </nav>
   )
 }
