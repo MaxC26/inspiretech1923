@@ -1,5 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 import logoinspiretech1923 from '../assets/logoinspiretech1923.png'
+import { Link } from 'react-router-dom'
+import { routes } from '../utils/rutas'
 
 const Hero = () => {
   return (
@@ -35,12 +37,12 @@ const Hero = () => {
               impulsar la transformación digital de tu negocio.
             </p>
             <div className='flex flex-wrap gap-4'>
-              <a
-                href='#contacto'
+              <Link
+                to={routes.frontend.contacto}
                 className='px-6 py-3 bg-teal-500 hover:bg-teal-600 text-white font-medium rounded-md transition-all duration-300 flex items-center'
               >
                 Contáctanos <ArrowRight className='ml-2 h-5 w-5' />
-              </a>
+              </Link>
               <a
                 href='#servicios'
                 className='px-6 py-3 border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white font-medium rounded-md transition-all duration-300'

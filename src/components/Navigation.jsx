@@ -1,10 +1,11 @@
 import { Menu, X } from 'lucide-react'
 import logoinspiretech1923 from '../assets/logoinspiretech1923.png'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { routes } from '../utils/rutas'
 
 const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
   const navigate = useNavigate()
+  const location = useLocation()
 
   return (
     <nav className='fixed w-full bg-gray-900 bg-opacity-90 z-50'>
@@ -28,66 +29,71 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
             </div>
             <div className='hidden md:block'>
               <div className='ml-10 flex items-baseline space-x-4'>
-                <a
-                  href='#inicio'
-                  className={`px-3 py-2 rounded-md text-sm font-medium ${
-                    activeSection === 'inicio'
-                      ? 'text-teal-400 border-b-2 border-teal-400'
-                      : 'text-gray-300 hover:text-teal-300'
-                  }`}
-                >
-                  Inicio
-                </a>
-                <a
-                  href='#quienes-somos'
-                  className={`px-3 py-2 rounded-md text-sm font-medium ${
-                    activeSection === 'quienes-somos'
-                      ? 'text-teal-400 border-b-2 border-teal-400'
-                      : 'text-gray-300 hover:text-teal-300'
-                  }`}
-                >
-                  ¿Quiénes Somos?
-                </a>
-                <a
-                  href='#que-hacemos'
-                  className={`px-3 py-2 rounded-md text-sm font-medium ${
-                    activeSection === 'que-hacemos'
-                      ? 'text-teal-400 border-b-2 border-teal-400'
-                      : 'text-gray-300 hover:text-teal-300'
-                  }`}
-                >
-                  ¿Qué Hacemos?
-                </a>
-                <a
-                  href='#equipo'
-                  className={`px-3 py-2 rounded-md text-sm font-medium ${
-                    activeSection === 'equipo'
-                      ? 'text-teal-400 border-b-2 border-teal-400'
-                      : 'text-gray-300 hover:text-teal-300'
-                  }`}
-                >
-                  Nuestro Equipo
-                </a>
-                <a
-                  href='#servicios'
-                  className={`px-3 py-2 rounded-md text-sm font-medium ${
-                    activeSection === 'servicios'
-                      ? 'text-teal-400 border-b-2 border-teal-400'
-                      : 'text-gray-300 hover:text-teal-300'
-                  }`}
-                >
-                  Servicios
-                </a>
-                <Link
-                  to={routes.frontend.contacto}
-                  className={`px-3 py-2 rounded-md text-sm font-medium ${
-                    activeSection === 'contacto'
-                      ? 'text-teal-400 border-b-2 border-teal-400'
-                      : 'text-gray-300 hover:text-teal-300'
-                  }`}
-                >
-                  Contacto
-                </Link>
+                {routes.frontend.contacto !== location.pathname && (
+                  <>
+                    <a
+                      href='#inicio'
+                      className={`px-3 py-2 rounded-md text-sm font-medium ${
+                        activeSection === 'inicio'
+                          ? 'text-teal-400 border-b-2 border-teal-400'
+                          : 'text-gray-300 hover:text-teal-300'
+                      }`}
+                    >
+                      Inicio
+                    </a>
+                    <a
+                      href='#quienes-somos'
+                      className={`px-3 py-2 rounded-md text-sm font-medium ${
+                        activeSection === 'quienes-somos'
+                          ? 'text-teal-400 border-b-2 border-teal-400'
+                          : 'text-gray-300 hover:text-teal-300'
+                      }`}
+                    >
+                      ¿Quiénes Somos?
+                    </a>
+                    <a
+                      href='#que-hacemos'
+                      className={`px-3 py-2 rounded-md text-sm font-medium ${
+                        activeSection === 'que-hacemos'
+                          ? 'text-teal-400 border-b-2 border-teal-400'
+                          : 'text-gray-300 hover:text-teal-300'
+                      }`}
+                    >
+                      ¿Qué Hacemos?
+                    </a>
+                    <a
+                      href='#equipo'
+                      className={`px-3 py-2 rounded-md text-sm font-medium ${
+                        activeSection === 'equipo'
+                          ? 'text-teal-400 border-b-2 border-teal-400'
+                          : 'text-gray-300 hover:text-teal-300'
+                      }`}
+                    >
+                      Nuestro Equipo
+                    </a>
+                    <a
+                      href='#servicios'
+                      className={`px-3 py-2 rounded-md text-sm font-medium ${
+                        activeSection === 'servicios'
+                          ? 'text-teal-400 border-b-2 border-teal-400'
+                          : 'text-gray-300 hover:text-teal-300'
+                      }`}
+                    >
+                      Servicios
+                    </a>
+                    <Link
+                      to={routes.frontend.contacto}
+                      className={`px-3 py-2 rounded-md text-sm font-medium ${
+                        activeSection === 'contacto' ||
+                        routes.frontend.contacto === location.pathname
+                          ? 'text-teal-400 border-b-2 border-teal-400'
+                          : 'text-gray-300 hover:text-teal-300'
+                      }`}
+                    >
+                      Contacto
+                    </Link>
+                  </>
+                )}
               </div>
             </div>
           </div>
@@ -171,9 +177,8 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
           >
             Servicios
           </a>
-          <a
-            href='#contacto'
-            onClick={() => setMobileMenuOpen(false)}
+          <Link
+            to={routes.frontend.contacto}
             className={`block px-3 py-2 rounded-md text-base font-medium ${
               activeSection === 'contacto'
                 ? 'bg-gray-800 text-teal-400'
@@ -181,7 +186,7 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
             }`}
           >
             Contacto
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

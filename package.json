@@ -17,6 +17,7 @@
     "aos": "^2.3.4",
     "daisyui": "^5.0.14",
     "formik": "^2.4.6",
+    "inspiretech-front": "file:",
     "lucide-react": "^0.487.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

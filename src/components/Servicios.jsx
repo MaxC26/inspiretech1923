@@ -1,3 +1,5 @@
+import { Wrench, Code, Server, Users } from 'lucide-react'
+
 const Servicios = () => {
   return (
     <section id='servicios' className='py-20 bg-gray-900'>
@@ -33,11 +35,14 @@ const Servicios = () => {
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
           <div
-            className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'
+            className='bg-gray-900 rounded-lg overflow-hidden border border-teal-500/20 
+            hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 
+            transform hover:scale-105'
             data-aos='fade-right'
           >
             <div className='p-6'>
-              <h3 className='text-xl font-bold text-teal-400 mb-4'>
+              <h3 className='text-xl font-bold text-teal-400 mb-4 flex items-center gap-2'>
+                <Wrench className='w-5 h-5' />
                 Consultoría tecnológica y automatización
               </h3>
               <ul className='text-gray-300 space-y-3'>
@@ -58,11 +63,14 @@ const Servicios = () => {
           </div>
 
           <div
-            className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'
+            className='bg-gray-900 rounded-lg overflow-hidden border border-teal-500/20 
+            hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 
+            transform hover:scale-105'
             data-aos='fade-left'
           >
             <div className='p-6'>
-              <h3 className='text-xl font-bold text-teal-400 mb-4'>
+              <h3 className='text-xl font-bold text-teal-400 mb-4 flex items-center gap-2'>
+                <Code className='w-5 h-5' />
                 Desarrollo de Software
               </h3>
               <ul className='text-gray-300 space-y-3'>
@@ -83,11 +91,14 @@ const Servicios = () => {
           </div>
 
           <div
-            className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'
+            className='bg-gray-900 rounded-lg overflow-hidden border border-teal-500/20 
+            hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 
+            transform hover:scale-105'
             data-aos='fade-right'
           >
             <div className='p-6'>
-              <h3 className='text-xl font-bold text-teal-400 mb-4'>
+              <h3 className='text-xl font-bold text-teal-400 mb-4 flex items-center gap-2'>
+                <Server className='w-5 h-5' />
                 Infraestructura Tecnológica
               </h3>
               <ul className='text-gray-300 space-y-3'>
@@ -108,11 +119,14 @@ const Servicios = () => {
           </div>
 
           <div
-            className='bg-gray-800 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 border-card'
+            className='bg-gray-900 rounded-lg overflow-hidden border border-teal-500/20 
+            hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 
+            transform hover:scale-105'
             data-aos='fade-left'
           >
             <div className='p-6'>
-              <h3 className='text-xl font-bold text-teal-400 mb-4'>
+              <h3 className='text-xl font-bold text-teal-400 mb-4 flex items-center gap-2'>
+                <Users className='w-5 h-5' />
                 Outsourcing Técnico
               </h3>
               <ul className='text-gray-300 space-y-3'>
