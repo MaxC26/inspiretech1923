@@ -33,7 +33,7 @@ const QuienesSomos = () => {
             </p>
             <a
               href='#equipo'
-              className='inline-flex items-center text-teal-400 hover:text-teal-300 font-medium transition-colors duration-300'
+              className='inline-flex items-center text-teal-400 hover:text-teal-300 hover:underline font-medium transition-colors duration-300'
             >
               Ver más <ArrowRight className='ml-2 h-5 w-5' />
             </a>

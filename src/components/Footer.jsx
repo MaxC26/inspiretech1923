@@ -134,7 +134,8 @@ const Footer = () => {
                   href='#inicio'
                   className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
                 >
-                  <span className='mr-2'>→</span> Inicio
+                  <span className='mr-2'>→</span>{' '}
+                  <span className='hover:underline'>Inicio</span>
                 </a>
               </li>
               <li>
@@ -142,7 +143,8 @@ const Footer = () => {
                   href='#servicios'
                   className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
                 >
-                  <span className='mr-2'>→</span> Servicios
+                  <span className='mr-2'>→</span>{' '}
+                  <span className='hover:underline'>Servicios</span>
                 </a>
               </li>
               <li>
@@ -150,7 +152,8 @@ const Footer = () => {
                   href='#nosotros'
                   className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
                 >
-                  <span className='mr-2'>→</span> Nosotros
+                  <span className='mr-2'>→</span>
+                  <span className='hover:underline'>Nosotros</span>
                 </a>
               </li>
               <li>
@@ -158,7 +161,8 @@ const Footer = () => {
                   href='#equipo'
                   className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
                 >
-                  <span className='mr-2'>→</span> Equipo
+                  <span className='mr-2'>→</span>
+                  <span className='hover:underline'>Equipo</span>
                 </a>
               </li>
               <li>
@@ -166,7 +170,8 @@ const Footer = () => {
                   href='#contacto'
                   className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
                 >
-                  <span className='mr-2'>→</span> Contacto
+                  <span className='mr-2'>→</span>
+                  <span className='hover:underline'>Contacto</span>
                 </a>
               </li>
             </ul>
@@ -181,7 +186,8 @@ const Footer = () => {
                   href='#'
                   className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
                 >
-                  <span className='mr-2'>→</span> Desarrollo de Software
+                  <span className='mr-2'>→</span>
+                  <span className='hover:underline'>Desarrollo de Software</span>
                 </a>
               </li>
               <li>
@@ -189,7 +195,8 @@ const Footer = () => {
                   href='#'
                   className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
                 >
-                  <span className='mr-2'>→</span> Automatización de Procesos
+                  <span className='mr-2'>→</span>
+                  <span className='hover:underline'>Automatización de Procesos</span>
                 </a>
               </li>
               <li>
@@ -197,7 +204,8 @@ const Footer = () => {
                   href='#'
                   className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
                 >
-                  <span className='mr-2'>→</span> Soporte de Redes
+                  <span className='mr-2'>→</span>
+                  <span className='hover:underline'>Soporte de Redes</span>
                 </a>
               </li>
               <li>
@@ -205,7 +213,8 @@ const Footer = () => {
                   href='#'
                   className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
                 >
-                  <span className='mr-2'>→</span> Marketing Digital
+                  <span className='mr-2'>→</span>
+                  <span className='hover:underline'>Marketing Digital</span>
                 </a>
               </li>
               <li>
@@ -213,7 +222,8 @@ const Footer = () => {
                   href='#'
                   className='text-gray-400 hover:text-teal-400 transition-colors text-sm flex items-center'
                 >
-                  <span className='mr-2'>→</span> Servicios de Outsourcing
+                  <span className='mr-2'>→</span>
+                  <span className='hover:underline'>Servicios de Outsourcing</span>
                 </a>
               </li>
             </ul>
@@ -235,7 +245,7 @@ const Footer = () => {
                 />
                 <button
                   type='submit'
-                  className='bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-r-md transition-colors'
+                  className='bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-r-md transition-colors cursor-pointer'
                 >
                   <svg
                     className='h-5 w-5'
