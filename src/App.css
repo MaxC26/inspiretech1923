@@ -42,22 +42,44 @@ html {
   }
 }
 
-.animated-gradient {
-  position: absolute;
+.f-hero {
+  position: relative;
+  background-image: url('./assets/fondo.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 300px;
+}
+
+.f-hero::after {
   content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-      123.79deg,
-      rgba(22, 22, 22, 0) 29.5%,
-      rgba(196, 196, 196, 0.25) 55.09%,
-      rgb(183, 152, 106) 64.35%,
-      rgba(196, 196, 196, 0.25) 71.03%,
-      rgba(22, 22, 22, 0) 97.08%
-    )
-    center center / 400% 400%;
-  opacity: 0.7;
-  z-index: -2;
-  animation: gradient 10s ease-in 0s infinite normal none running;
+  background-color: #101828;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+@keyframes cursorBlink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink {
+  position: absolute;
+  margin-top: 2px;
+  animation: cursorBlink 1s step-end infinite;
+}
+
+.f-man {
+  mask-image: linear-gradient(black 80%, transparent);
 }
 
