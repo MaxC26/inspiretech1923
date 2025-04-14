@@ -79,12 +79,13 @@ const ContactoForm = () => {
               <div className='fieldset'>
                 <legend className='fieldset-legend text-white'>Teléfono Empresa</legend>
                 <Field
-                  type='text'
+                  type='tel'
                   name='telefonoEmpresa'
                   className={`input w-full focus:outline-teal-500 ${
                     errors.telefonoEmpresa && 'input-error'
                   }`}
                   placeholder='Teléfono de tu empresa'
+                  inputMode='numeric'
                   maxLength={8}
                 />
                 {errors.telefonoEmpresa && (
