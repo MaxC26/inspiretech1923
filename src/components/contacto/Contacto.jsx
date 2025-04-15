@@ -13,7 +13,7 @@ const Contacto = () => {
               formulario o utiliza nuestros canales directos.
             </p>
             <div className='space-y-6'>
-              <div className='flex items-center group hover:bg-gray-700/50 p-3 rounded-lg transition-all'>
+              <div className='group flex items-center group hover:bg-gray-700/50 p-3 rounded-lg transition-all'>
                 <div className='flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-full bg-teal-500/20 group-hover:bg-teal-500/30 transition-colors'>
                   <svg
                     className='h-6 w-6 text-teal-400'
@@ -31,14 +31,17 @@ const Contacto = () => {
                 <div className='ml-4'>
                   <p className='text-gray-200 font-semibold'>Teléfono</p>
                   <p className='text-teal-400 transition-colors'>
-                    <a href='tel:+50388888888' className='hover:text-teal-300'>
+                    <a
+                      href='tel:+50388888888'
+                      className='hover:text-teal-300 group-hover:underline'
+                    >
                       (+503) 88888 8888
                     </a>
                   </p>
                 </div>
               </div>
 
-              <div className='flex items-center group hover:bg-gray-700/50 p-3 rounded-lg transition-all'>
+              <div className='group flex items-center group hover:bg-gray-700/50 p-3 rounded-lg transition-all'>
                 <div className='flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-full bg-teal-500/20 group-hover:bg-teal-500/30 transition-colors'>
                   <svg
                     className='h-6 w-6 text-teal-400'
@@ -59,7 +62,7 @@ const Contacto = () => {
                   <p className='text-teal-400 transition-colors'>
                     <a
                       href='mailto:mail@inspiretech1923.com'
-                      className='hover:text-teal-300'
+                      className='hover:text-teal-300 group-hover:underline'
                     >
                       mail@inspiretech1923.com
                     </a>
@@ -89,7 +92,7 @@ const Contacto = () => {
                 </div>
               </div>
 
-              <div className='flex items-center group hover:bg-gray-700/50 p-3 rounded-lg transition-all'>
+              <div className='group flex items-center group hover:bg-gray-700/50 p-3 rounded-lg transition-all'>
                 <div className='flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-full bg-teal-500/20 group-hover:bg-teal-500/30 transition-colors'>
                   <svg
                     className='h-6 w-6 text-teal-400'
@@ -113,7 +116,7 @@ const Contacto = () => {
                       href='https://www.inspiretech1923.com'
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='hover:text-teal-300'
+                      className='hover:text-teal-300 group-hover:underline'
                     >
                       www.inspiretech1923.com
                     </a>

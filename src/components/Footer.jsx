@@ -28,10 +28,10 @@ const Footer = () => {
             <div className='flex space-x-3'>
               <a
                 href='#'
-                className='h-8 w-8 rounded-full bg-gray-800 hover:bg-teal-500/30 flex items-center justify-center transition-colors'
+                className='h-8 w-8 rounded-full bg-gray-800 hover:bg-teal-500/30 flex items-center justify-center transition-all duration-300 transform hover:scale-160 group'
               >
                 <svg
-                  className='h-4 w-4 text-teal-400'
+                  className='h-4 w-4 text-teal-400 transition-colors duration-300 group-hover:text-teal-200'
                   viewBox='0 0 24 24'
                   fill='none'
                   xmlns='http://www.w3.org/2000/svg'
@@ -47,10 +47,10 @@ const Footer = () => {
               </a>
               <a
                 href='#'
-                className='h-8 w-8 rounded-full bg-gray-800 hover:bg-teal-500/30 flex items-center justify-center transition-colors'
+                className='h-8 w-8 rounded-full bg-gray-800 hover:bg-teal-500/30 flex items-center justify-center transition-all duration-300 transform hover:scale-160 group'
               >
                 <svg
-                  className='h-4 w-4 text-teal-400'
+                  className='h-4 w-4 text-teal-400 transition-colors duration-300 group-hover:text-teal-200'
                   viewBox='0 0 24 24'
                   fill='none'
                   xmlns='http://www.w3.org/2000/svg'
@@ -63,10 +63,10 @@ const Footer = () => {
               </a>
               <a
                 href='#'
-                className='h-8 w-8 rounded-full bg-gray-800 hover:bg-teal-500/30 flex items-center justify-center transition-colors'
+                className='h-8 w-8 rounded-full bg-gray-800 hover:bg-teal-500/30 flex items-center justify-center transition-all duration-300 transform hover:scale-160 group'
               >
                 <svg
-                  className='h-4 w-4 text-teal-400'
+                  className='h-4 w-4 text-teal-400 transition-colors duration-300 group-hover:text-teal-200'
                   viewBox='0 0 24 24'
                   fill='none'
                   xmlns='http://www.w3.org/2000/svg'
@@ -96,10 +96,10 @@ const Footer = () => {
               </a>
               <a
                 href='#'
-                className='h-8 w-8 rounded-full bg-gray-800 hover:bg-teal-500/30 flex items-center justify-center transition-colors'
+                className='h-8 w-8 rounded-full bg-gray-800 hover:bg-teal-500/30 flex items-center justify-center transition-all duration-300 transform hover:scale-160 group'
               >
                 <svg
-                  className='h-4 w-4 text-teal-400'
+                  className='h-4 w-4 text-teal-400 transition-colors duration-300 group-hover:text-teal-200'
                   viewBox='0 0 24 24'
                   fill='none'
                   xmlns='http://www.w3.org/2000/svg'
