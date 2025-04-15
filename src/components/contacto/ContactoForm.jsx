@@ -19,9 +19,9 @@ const ContactoForm = () => {
   }
 
   return (
-    <div className='card w-full  shadow-xl bg-gray-900 border-teal-500/20'>
+    <div className='card card-lg w-full  shadow-xl bg-gray-900 border-teal-500/20'>
       <div className='card-body'>
-        <p className='text-center mb-5 text-white'>
+        <p className='text-center mb-5 text-white font-semibold'>
           ¿Quieres que te ayudemos? Completa el formulario y nos pondremos en contacto
           contigo.
         </p>
@@ -43,7 +43,9 @@ const ContactoForm = () => {
           {({ handleSubmit, errors, isSubmitting }) => (
             <Form onSubmit={handleSubmit}>
               <fieldset className='fieldset'>
-                <legend className='fieldset-legend text-white'>Nombre Empresa</legend>
+                <legend className='fieldset-legend text-white text-sm'>
+                  Nombre Empresa
+                </legend>
                 <Field
                   type='text'
                   name='nombreEmpresa'
@@ -60,7 +62,9 @@ const ContactoForm = () => {
               </fieldset>
 
               <fieldset className='fieldset'>
-                <legend className='fieldset-legend text-white'>Nombre Contacto</legend>
+                <legend className='fieldset-legend text-white text-sm'>
+                  Nombre Contacto
+                </legend>
                 <Field
                   type='text'
                   name='nombreContacto'
@@ -77,7 +81,9 @@ const ContactoForm = () => {
               </fieldset>
 
               <div className='fieldset'>
-                <legend className='fieldset-legend text-white'>Teléfono Empresa</legend>
+                <legend className='fieldset-legend text-white text-sm'>
+                  Teléfono Empresa
+                </legend>
                 <Field
                   type='tel'
                   name='telefonoEmpresa'
@@ -94,7 +100,9 @@ const ContactoForm = () => {
               </div>
 
               <div className='fieldset'>
-                <legend className='fieldset-legend text-white'>Correo Empresa</legend>
+                <legend className='fieldset-legend text-white text-sm'>
+                  Correo Empresa
+                </legend>
                 <Field
                   type='text'
                   name='correoEmpresa'
@@ -109,7 +117,9 @@ const ContactoForm = () => {
               </div>
 
               <div className='fieldset'>
-                <legend className='fieldset-legend text-white'>Sector Empresa</legend>
+                <legend className='fieldset-legend text-white text-sm'>
+                  Sector Empresa
+                </legend>
                 <Field
                   type='text'
                   name='sectorEmpresa'
@@ -124,7 +134,9 @@ const ContactoForm = () => {
               </div>
 
               <div className='fieldset mb-4'>
-                <legend className='fieldset-legend text-white'>Comentarios</legend>
+                <legend className='fieldset-legend text-white text-sm'>
+                  Comentarios
+                </legend>
                 <Field
                   as='textarea'
                   className={`textarea w-full focus:outline-teal-500 ${
