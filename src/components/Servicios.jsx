@@ -1,4 +1,5 @@
 import { Wrench, Code, Server, Users } from 'lucide-react'
+import AdvancedServicesMarquee from './AdvancedServicesMarquee'
 
 const Servicios = () => {
   return (
@@ -14,6 +15,8 @@ const Servicios = () => {
             digital.
           </p>
         </div>
+
+        <AdvancedServicesMarquee />
 
         <div
           className='mt-16 p-6 bg-gray-900/50 rounded-lg border border-teal-500/20 text-center mb-10 border-card'
@@ -152,3 +155,4 @@ const Servicios = () => {
 }
 
 export default Servicios
+

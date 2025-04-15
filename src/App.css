@@ -7,13 +7,14 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background-color: #101828;
+  background-color: #2d323f;
   max-width: 100vw;
 }
 
 /*  Mobile (menor a 640px)  */
 @media (max-width: 639px) {
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
 }
@@ -81,5 +82,31 @@ html {
 
 .f-man {
   mask-image: linear-gradient(black 80%, transparent);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-33.33%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 35s linear infinite;
 }
 
