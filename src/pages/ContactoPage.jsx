@@ -21,6 +21,9 @@ const ContactoPage = () => {
       })
     }
 
+    // Ejecutar inmediatamente al montar el componente
+    handleScroll()
+
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
