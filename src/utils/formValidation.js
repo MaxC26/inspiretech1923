@@ -1,14 +1,58 @@
-import * as Yup from 'yup'
+// function noValidation() {
+//   return
+// }
 
-export const validarContacto = Yup.object().shape({
-  nombreEmpresa: Yup.string().required('Campo requerido'),
-  nombreContacto: Yup.string().required('Campo requerido'),
-  telefonoEmpresa: Yup.string()
-    .required('Campo requerido')
-    .matches(/^\d+$/, 'Solo números')
-    .min(8, 'Debe escribir 8 caracteres')
-    .max(8, 'Máximo 8 caracteres'),
-  correoEmpresa: Yup.string().email('Email inválido'),
-  // sectorEmpresa: Yup.string().required('Campo requerido'),
-  // mensaje: Yup.string().required('Campo requerido'),
-})
+function required(value) {
+  let error
+  if (!value) {
+    error = 'Campo requerido'
+  }
+  return error
+}
+
+function onlyNumbers(value) {
+  let error
+  const regex = /^[0-9]+$/
+  if (value && !regex.test(value)) {
+    error = 'Ingrese solo números'
+  }
+  return error
+}
+
+function validmail(value) {
+  let error
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  if (value && !regex.test(value)) {
+    error = 'Ingrese un correo válido'
+  }
+  return error
+}
+
+function campoLength(value, length) {
+  let error
+  value = value.toString()
+  if (value && value.length !== length) {
+    error = `Debe tener ${length} caracteres`
+  }
+  return error
+}
+
+export const validarContacto = () => {
+  return {
+    nombreEmpresa: (value) => {
+      return required(value)
+    },
+    nombreContacto: (value) => {
+      return required(value)
+    },
+    tipoContacto: (value) => {
+      return required(value)
+    },
+    telefonoEmpresa: (value) => {
+      return required(value) || onlyNumbers(value) || campoLength(value, 8)
+    },
+    correoEmpresa: (value) => {
+      return required(value) || validmail(value)
+    },
+  }
+}
