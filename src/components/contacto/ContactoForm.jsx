@@ -1,7 +1,12 @@
 import { Field, Form, Formik } from 'formik'
 import { validarContacto } from '../../utils/formValidation'
+import { useState } from 'react'
 
 const ContactoForm = () => {
+  const validation = validarContacto()
+  const [tipoContacto, setTipoContacto] = useState('1')
+  //NOTE - 1 = Telefono, 2 = Correo
+
   const onSubmitForm = async (values) => {
     try {
       const response = await new Promise((resolve) => {
@@ -32,15 +37,12 @@ const ContactoForm = () => {
             nombreContacto: '',
             telefonoEmpresa: '',
             correoEmpresa: '',
-            sectorEmpresa: '',
-            mensaje: '',
           }}
           validateOnChange={false}
           validateOnBlur={false}
           onSubmit={onSubmitForm}
-          validationSchema={validarContacto}
         >
-          {({ handleSubmit, errors, isSubmitting }) => (
+          {({ handleSubmit, errors, isSubmitting, setFieldValue }) => (
             <Form onSubmit={handleSubmit}>
               <fieldset className='fieldset'>
                 <legend className='fieldset-legend text-white text-sm'>
@@ -53,6 +55,7 @@ const ContactoForm = () => {
                     errors.nombreEmpresa && 'input-error'
                   }`}
                   placeholder='Nombre de tu empresa'
+                  validate={validation.nombreEmpresa}
                 />
                 {errors.nombreEmpresa && (
                   <div className='fieldset-label text-red-400'>
@@ -72,6 +75,7 @@ const ContactoForm = () => {
                     errors.nombreContacto && 'input-error'
                   }`}
                   placeholder='Nombre'
+                  validate={validation.nombreContacto}
                 />
                 {errors.nombreContacto && (
                   <div className='fieldset-label text-red-400'>
@@ -80,73 +84,56 @@ const ContactoForm = () => {
                 )}
               </fieldset>
 
-              <div className='fieldset'>
+              <div className='fieldset mb-4'>
                 <legend className='fieldset-legend text-white text-sm'>
-                  Teléfono Empresa
+                  Contacto Empresa
                 </legend>
-                <Field
-                  type='tel'
-                  name='telefonoEmpresa'
-                  className={`input w-full focus:outline-teal-500 ${
-                    errors.telefonoEmpresa && 'input-error'
-                  }`}
-                  placeholder='Teléfono de tu empresa'
-                  inputMode='numeric'
-                  maxLength={8}
-                />
+                <label className='label'>
+                  <Field
+                    as='select'
+                    defaultValue='1'
+                    name='tipoContacto'
+                    onChange={(e) => {
+                      setTipoContacto(e.target.value)
+                      setFieldValue('telefonoEmpresa', '')
+                      setFieldValue('correoEmpresa', '')
+                      setFieldValue('tipoContacto', e.target.value)
+                    }}
+                    className={`select w-40 focus:outline-teal-500`}
+                    validate={validation.tipoContacto}
+                  >
+                    <option value={'1'}>Teléfono</option>
+                    <option value={'2'}>Correo</option>
+                  </Field>
+                  {tipoContacto === '1' ? (
+                    <Field
+                      type='tel'
+                      name='telefonoEmpresa'
+                      className={`input w-full focus:outline-teal-500 ${
+                        errors.telefonoEmpresa && 'input-error'
+                      }`}
+                      placeholder='Teléfono de tu empresa'
+                      inputMode='numeric'
+                      maxLength={8}
+                      validate={validation.telefonoEmpresa}
+                    />
+                  ) : (
+                    <Field
+                      type='text'
+                      name='correoEmpresa'
+                      className={`input w-full focus:outline-teal-500 ${
+                        errors.correoEmpresa && 'input-error'
+                      }`}
+                      placeholder='Correo de tu empresa'
+                      validate={validation.correoEmpresa}
+                    />
+                  )}
+                </label>
                 {errors.telefonoEmpresa && (
                   <div className='text-red-400'>{'*' + errors.telefonoEmpresa}</div>
                 )}
-              </div>
-
-              <div className='fieldset'>
-                <legend className='fieldset-legend text-white text-sm'>
-                  Correo Empresa
-                </legend>
-                <Field
-                  type='text'
-                  name='correoEmpresa'
-                  className={`input w-full focus:outline-teal-500 ${
-                    errors.correoEmpresa && 'input-error'
-                  }`}
-                  placeholder='Correo de tu empresa'
-                />
                 {errors.correoEmpresa && (
                   <div className='text-red-400'>{'*' + errors.correoEmpresa}</div>
-                )}
-              </div>
-
-              <div className='fieldset'>
-                <legend className='fieldset-legend text-white text-sm'>
-                  Sector Empresa
-                </legend>
-                <Field
-                  type='text'
-                  name='sectorEmpresa'
-                  className={`input w-full focus:outline-teal-500 ${
-                    errors.sectorEmpresa && 'input-error'
-                  }`}
-                  placeholder='Sector de tu empresa'
-                />
-                {errors.sectorEmpresa && (
-                  <div className='text-red-400'>{'*' + errors.sectorEmpresa}</div>
-                )}
-              </div>
-
-              <div className='fieldset mb-4'>
-                <legend className='fieldset-legend text-white text-sm'>
-                  Comentarios
-                </legend>
-                <Field
-                  as='textarea'
-                  className={`textarea w-full focus:outline-teal-500 ${
-                    errors.mensaje && 'input-error'
-                  }`}
-                  name='mensaje'
-                  placeholder='Cuéntanos lo que buscas'
-                />
-                {errors.mensaje && (
-                  <div className='text-red-400'>{'*' + errors.mensaje}</div>
                 )}
               </div>
 
