@@ -31,7 +31,7 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
               <div className='ml-10 flex items-baseline space-x-4'>
                 <Link
                   to={`${routes.frontend.home}#inicio`}
-                  className={`px-3 py-2 rounded-md text-sm font-medium ${
+                  className={`px-3 py-2 rounded-md text-md font-medium ${
                     activeSection === 'inicio'
                       ? 'text-teal-400 border-b-2 border-teal-400'
                       : 'text-gray-300 hover:text-teal-300'
@@ -43,7 +43,7 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
                   <>
                     <a
                       href='#quienes-somos'
-                      className={`px-3 py-2 rounded-md text-sm font-medium ${
+                      className={`px-3 py-2 rounded-md text-md font-medium ${
                         activeSection === 'quienes-somos'
                           ? 'text-teal-400 border-b-2 border-teal-400'
                           : 'text-gray-300 hover:text-teal-300'
@@ -53,7 +53,7 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
                     </a>
                     <a
                       href='#que-hacemos'
-                      className={`px-3 py-2 rounded-md text-sm font-medium ${
+                      className={`px-3 py-2 rounded-md text-md font-medium ${
                         activeSection === 'que-hacemos'
                           ? 'text-teal-400 border-b-2 border-teal-400'
                           : 'text-gray-300 hover:text-teal-300'
@@ -63,7 +63,7 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
                     </a>
                     <a
                       href='#equipo'
-                      className={`px-3 py-2 rounded-md text-sm font-medium ${
+                      className={`px-3 py-2 rounded-md text-md font-medium ${
                         activeSection === 'equipo'
                           ? 'text-teal-400 border-b-2 border-teal-400'
                           : 'text-gray-300 hover:text-teal-300'
@@ -73,7 +73,7 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
                     </a>
                     <a
                       href='#servicios'
-                      className={`px-3 py-2 rounded-md text-sm font-medium ${
+                      className={`px-3 py-2 rounded-md text-md font-medium ${
                         activeSection === 'servicios'
                           ? 'text-teal-400 border-b-2 border-teal-400'
                           : 'text-gray-300 hover:text-teal-300'
@@ -85,7 +85,7 @@ const Navigation = ({ activeSection, mobileMenuOpen, setMobileMenuOpen }) => {
                 )}
                 <Link
                   to={routes.frontend.contacto}
-                  className={`px-3 py-2 rounded-md text-sm font-medium ${
+                  className={`px-3 py-2 rounded-md text-md font-medium ${
                     activeSection === 'contacto' ||
                     routes.frontend.contacto === location.pathname
                       ? 'text-teal-400 border-b-2 border-teal-400'

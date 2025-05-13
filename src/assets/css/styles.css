@@ -6,6 +6,7 @@
 body {
   font-family: var(--font-dosis);
   font-weight: 400; /* Peso regular por defecto */
+  font-size: 16px; /* Tamaño de fuente por defecto */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
