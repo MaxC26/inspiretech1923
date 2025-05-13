@@ -1,0 +1,47 @@
+/* Aplicación global de la fuente */
+:root {
+  --font-dosis: 'Dosis', sans-serif;
+}
+
+body {
+  font-family: var(--font-dosis);
+  font-weight: 400; /* Peso regular por defecto */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Clases de utilidad para los diferentes pesos */
+.font-extralight {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200 !important;
+}
+
+.font-light {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300 !important;
+}
+
+.font-regular {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400 !important;
+}
+
+.font-medium {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500 !important;
+}
+
+.font-semibold {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600 !important;
+}
+
+.font-bold {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700 !important;
+}
+
+.font-extrabold {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 800 !important;
+}

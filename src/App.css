@@ -8,6 +8,7 @@ html {
   margin: 0;
   padding: 0;
   background-color: #2d323f;
+  height: 100dvh;
   max-width: 100vw;
 }
 
@@ -109,4 +110,3 @@ html {
 .animate-marquee-reverse {
   animation: marquee-reverse 35s linear infinite;
 }
-
