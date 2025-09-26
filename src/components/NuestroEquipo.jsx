@@ -29,7 +29,7 @@ const NuestroEquipo = () => {
           <div className='md:w-1/2'>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
               <div
-                className='bg-gray-800 p-6 rounded-lg border border-teal-500/20 border-card transform hover:scale-105 transition-all duration-300 hover:shadow-teal-800/20 shadow-lg hover:border-teal-500/50'
+                className='bg-gray-800 p-6 rounded-lg border border-teal-500/20 border-card transform transition-all duration-300 shadow-lg'
                 data-aos='fade-up'
               >
                 <Users className='h-10 w-10 text-teal-400 mb-4' />
@@ -41,7 +41,7 @@ const NuestroEquipo = () => {
                 </p>
               </div>
               <div
-                className='bg-gray-800 p-6 rounded-lg border border-teal-500/20 border-card transform hover:scale-105 transition-all duration-300 hover:shadow-teal-800/20 shadow-lg hover:border-teal-500/50'
+                className='bg-gray-800 p-6 rounded-lg border border-teal-500/20 border-card transform transition-all duration-300 shadow-lg'
                 data-aos='fade-up'
               >
                 <Code className='h-10 w-10 text-teal-400 mb-4' />
@@ -53,7 +53,7 @@ const NuestroEquipo = () => {
                 </p>
               </div>
               <div
-                className='bg-gray-800 p-6 rounded-lg border border-teal-500/20 border-card transform hover:scale-105 transition-all duration-300 hover:shadow-teal-800/20 shadow-lg hover:border-teal-500/50'
+                className='bg-gray-800 p-6 rounded-lg border border-teal-500/20 border-card transform transition-all duration-300 shadow-lg'
                 data-aos='fade-up'
               >
                 <Server className='h-10 w-10 text-teal-400 mb-4' />
@@ -65,7 +65,7 @@ const NuestroEquipo = () => {
                 </p>
               </div>
               <div
-                className='bg-gray-800 p-6 rounded-lg border border-teal-500/20 border-card transform hover:scale-105 transition-all duration-300 hover:shadow-teal-800/20 shadow-lg hover:border-teal-500/50'
+                className='bg-gray-800 p-6 rounded-lg border border-teal-500/20 border-card transform transition-all duration-300 shadow-lg'
                 data-aos='fade-up'
               >
                 <HeartHandshake className='h-10 w-10 text-teal-400 mb-4' />
@@ -93,3 +93,4 @@ const NuestroEquipo = () => {
 }
 
 export default NuestroEquipo
+

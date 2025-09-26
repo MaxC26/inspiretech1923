@@ -7,6 +7,7 @@ import NuestroEquipo from '../components/NuestroEquipo'
 import Servicios from '../components/Servicios'
 import Footer from '../components/Footer'
 import { useLocation } from 'react-router-dom'
+import TrabajaConNosotros from '../components/TrabajaConNosotros'
 
 const HomePage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -50,6 +51,7 @@ const HomePage = () => {
         setMobileMenuOpen={setMobileMenuOpen}
       />
       <Hero />
+      <TrabajaConNosotros />
       <QuienesSomos />
       <QueHacemos />
       <NuestroEquipo />
@@ -60,3 +62,4 @@ const HomePage = () => {
 }
 
 export default HomePage
+

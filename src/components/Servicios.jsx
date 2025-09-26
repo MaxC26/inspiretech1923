@@ -18,7 +18,7 @@ const Servicios = () => {
 
         <AdvancedServicesMarquee />
 
-        <div
+        {/* <div
           className='mt-16 p-6 bg-gray-900/50 rounded-lg border border-teal-500/20 text-center mb-10 border-card'
           data-aos='fade-up'
         >
@@ -34,9 +34,9 @@ const Servicios = () => {
             Consultoría tecnológica estratégica, desarrollo de aplicaciones personalizadas
             y soporte integral de infraestructura.
           </p>
-        </div>
+        </div> */}
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
+        {/* <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
           <div
             className='bg-gray-900 rounded-lg overflow-hidden border border-teal-500/20 
             hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20 
@@ -148,7 +148,7 @@ const Servicios = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

@@ -61,10 +61,10 @@ const Contacto = () => {
                   <p className='text-gray-200 font-semibold'>Correo Electrónico</p>
                   <p className='text-teal-400 transition-colors'>
                     <a
-                      href='mailto:mail@inspiretech1923.com'
+                      href='mailto:contacto@inspiretech1923.com'
                       className='hover:text-teal-300 group-hover:underline'
                     >
-                      mail@inspiretech1923.com
+                      contacto@inspiretech1923.com
                     </a>
                   </p>
                 </div>
@@ -135,3 +135,4 @@ const Contacto = () => {
 }
 
 export default Contacto
+

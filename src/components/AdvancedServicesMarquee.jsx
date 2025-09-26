@@ -1,5 +1,20 @@
 import Marquee from 'react-fast-marquee'
-import { BarChart2, Code, Server, Shield, Database, Zap, Cloud, Cog } from 'lucide-react'
+import {
+  Activity,
+  Code,
+  Layers,
+  LayoutGrid,
+  PenTool,
+  Search,
+  Server,
+  Shield,
+  Target,
+  TrendingUp,
+  UserCheck,
+  Users,
+  Wifi,
+  Wrench,
+} from 'lucide-react'
 
 const ServiceCard = ({ icon: Icon, title }) => {
   return (
@@ -17,24 +32,28 @@ const ServiceCard = ({ icon: Icon, title }) => {
 
 const AdvancedServicesMarquee = () => {
   const serviceCards1 = [
-    { icon: BarChart2, title: 'Análisis y diagnóstico tecnológico' },
-    { icon: Code, title: 'Desarrollo de aplicaciones web' },
-    { icon: Server, title: 'Infraestructura y operaciones IT' },
-    { icon: Shield, title: 'Seguridad informática' },
-    { icon: Database, title: 'Gestión de bases de datos' },
+    { icon: Wrench, title: 'Consultoría tecnológica y automatización' },
+    { icon: Search, title: 'Análisis y diagnóstico tecnológico' },
+    { icon: LayoutGrid, title: 'Diseño de soluciones escalables' },
+    { icon: TrendingUp, title: 'Acompañamiento estratégico y digitalización' },
+    { icon: Code, title: 'Desarrollo de Software' },
+    { icon: PenTool, title: 'Desarrollo de aplicaciones a medida' },
   ]
 
   const serviceCards2 = [
-    { icon: Zap, title: 'Optimización de rendimiento' },
-    { icon: Cloud, title: 'Servicios en la nube' },
-    { icon: Cog, title: 'Automatización de procesos' },
-    { icon: BarChart2, title: 'Análisis y diagnóstico tecnológico' },
-    { icon: Code, title: 'Desarrollo de aplicaciones web' },
+    { icon: Layers, title: 'Plataformas digitales personalizadas' },
+    { icon: Target, title: 'Soluciones empresariales que aceleran resultados' },
+    { icon: Server, title: 'Infraestructura Tecnológica' },
+    { icon: Wifi, title: 'Soporte y mantenimiento de redes 24/7' },
+    { icon: Shield, title: 'Seguridad y escalabilidad de infraestructura' },
+    { icon: Activity, title: 'Monitoreo proactivo y gestión de incidencias' },
+    { icon: Users, title: 'Outsourcing Técnico' },
+    { icon: UserCheck, title: 'Personal técnico especializado' },
   ]
 
   return (
     <section className='w-full py-12 overflow-hidden bg-[#1e2938] relative'>
-      <div className='relative max-w-6xl mx-auto'>
+      <div className='relative max-w-6xl mx-auto' data-aos='fade-up'>
         <Marquee gradient={true} speed={30} gradientColor={'#1e2938'} gradientWidth={200}>
           {serviceCards1.map((service, index) => (
             <ServiceCard
