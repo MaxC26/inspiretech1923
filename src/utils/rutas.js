@@ -8,3 +8,4 @@ const routesFrontend = Object.freeze({
 export const routes = Object.freeze({
   frontend: routesFrontend,
 })
+

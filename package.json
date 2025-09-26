@@ -1,6 +1,6 @@
 {
   "name": "inspiretech-front",
-  "homepage": "https://maxc26.github.io/inspiretech1923/",
+  "homepage": ".",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -40,3 +40,4 @@
     "vite": "^6.2.0"
   }
 }
+
