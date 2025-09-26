@@ -1,4 +1,4 @@
-export const context = '/inspiretech1923'
+export const context = '/'
 
 const routesFrontend = Object.freeze({
   home: context,
